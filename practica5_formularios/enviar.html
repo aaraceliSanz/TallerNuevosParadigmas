@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enviar</title>
+</head>
+<body>
+    <h1>Enviar</h1>
+    Nombre: <span id="nombre"></span>
+    <br>
+    Apellido: <span id="apellido"></span>
+    <script> //JavaScrip
+        const urlParams = new URLSearchParams(window.location.search); // Define una constante llamada urlParams y le asigna la función URLSearchParams que busca en el navegador
+        
+        const nombreObtenido = urlParams.get('nombre'); // Constante que contiene el nombre, .get lo busca de la url
+        const apellidoObtenido = urlParams.get('apellido');
+        console.log(nombreObtenido); // Imprime en consola del navegador
+
+        nombre = document.getElementById("nombre");
+        nombre.innerHTML = nombreObtenido;
+        apellido = document.getElementById("apellido");
+        apellido.innerHTML = apellidoObtenido;
+    </script>
+</body>
+</html>
