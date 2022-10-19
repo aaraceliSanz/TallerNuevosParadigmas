@@ -39,56 +39,61 @@
   </div>
   
   <!--Navbar (recuperado de Bootstrap.com)-->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light"> <!--El link de nav interna lleva #idElemento-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light w-100" id="menuHamburguesa">
     <div class="container-fluid bg-warning">
-      <a class="navbar-brand" href="#inicio">
+      <a class="navbar-brand" href="#">
         <!--Imagen para LOGO-->
-        <img src="img/logo-ng-sf.png" class="p-0" alt="Logo" width="250px" >
+        <img src="img/logo-ng-sf.png" alt="Logo" width="150px" >
       </a>      
-      <!--Menú hamburgesa-->
+        
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto">
-              <li class="lead nav-item">
+              <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
               </li>
-              <li class="lead nav-item">
-                <a class="nav-link" aria-current="page" href="#">Sobre nosotras</a>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#nosotras">Sobre nosotras</a>
               </li>
-              <li class="lead nav-item dropdown">
+              <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Eventos
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Girls Just Want to Have STEM!</a></li>
-                  <li><a class="dropdown-item" href="#">Hackatones</a></li>
-                  <li><a class="dropdown-item" href="#">Bootcamps</a></li>
+                  <li><a class="dropdown-item" href="#eventos">Girls Just Want to Have STEM!</a></li>
+                  <li><a class="dropdown-item" href="#eventos">Hackatones</a></li>
+                  <li><a class="dropdown-item" href="#eventos">Bootcamps</a></li>
                 </ul>
               </li>
-              <li class="lead nav-item dropdown">
+              <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Cursos y talleres
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Ciencia</a></li>
-                  <li><a class="dropdown-item" href="#">Tecnología</a></li>
-                  <li><a class="dropdown-item" href="#">Ingeniería</a></li>
-                  <li><a class="dropdown-item" href="#">Matemáticas</a></li>
+                  <li><a class="dropdown-item" href="#ciencia">Ciencia</a></li>
+                  <li><a class="dropdown-item" href="#tecnologia">Tecnología</a></li>
+                  <li><a class="dropdown-item" href="#ingenieria">Ingeniería</a></li>
+                  <li><a class="dropdown-item" href="#matematicas">Matemáticas</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Certificaciones</a></li>
+                  <li><a class="dropdown-item" href="#certificaciones">Certificaciones</a></li>
                 </ul>
               </li>
-              <li class="lead nav-item">
-                <a class="nav-link" href="#formaContacto" tabindex="-1" aria-current="page">¡Yo quiero ser STEMinistA!</a>
+              <li class="nav-item">
+                <a class="nav-link active" href="#QuieroSer" tabindex="-1" aria-current="page">¡Yo quiero ser STEMinistA!</a>
               </li>
             </ul>
           </div>
         </div>
-      </nav>
+  </nav>
 
-      <div class="container-fluid m-0 p-0" id="inicio">
+  <a href="#nav-superior">
+    <img src="img/flecha-hacia-arriba.png" alt="flecha arriba" id="flechaArriba">
+  </a>
+
+      <div class="container-fluid m-0 p-0 bg-light" id="inicio">
         <div id="carouselExampleIndicators" class="carousel slide" data-aos="flip-up" data-bs-ride="carousel">
           <div class="row">
             <div class="col-6">
@@ -131,22 +136,205 @@
               <h1 class="animate__animated animate__backInLeft">STEM is a lot of FUN,</h1>
               <h1 class="animate__animated animate__backInRight">and girls just to want</h1>
               <h1 class="animate__animated animate__backInLeft">have FUN!</h1>
-
-              
-              
             </div>
           </div>
         </div>
       </div>
 
-      
-      <form action="" name="formaContacto" id="formaContacto">
+
+      <div class="container-fluid py-2 bg-warning" id="nosotras">
+        <div class="container my-5">
+          <div class="row">
+            <!-- <div class="col-12 col-md-6 animate__animated animate__fadeInLeft" id="nosotras-left"> -->
+            <div class="col-12 col-md-6" id="nosotras-left" data-aos="slide-right">
+              <div>
+                <img src="img/logo-ng-cf.png" alt="Logotipo" class="w-100" id="img-nosotras-left">
+              </div>
+            </div>
+            <!-- <div class="col-12 col-md-6 animate__animated animate__fadeInRight" id="nosotras-right"> -->
+            <div class="col-12 col-md-6" id="nosotras-right" data-aos="slide-left">
+              <div>
+                <h2 class="titulo-derecho text-center">Conoce STEMinistA</h2>
+                <p class="text-center">STEMinista es un proyecto que busca incluir a mujeres jovenes en los campos de Ciencia, Tecnología, Ingeniería y Matemáticas.</p>
+                <div class="row">
+                  <div class="col-2 md-1">
+                    <img src="img/calendar.png" alt="calendario" class="w-100">
+                  </div>
+                  <div class="col-10 md-5">
+                    <h3>¿Cúando?</h3>
+                    <p>29 de Octubre de 2022</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-2 md-1">
+                    <img src="img/location.png" alt="calendario" class="w-100">
+                  </div>
+                  <div class="col-10 md-5">
+                    <h3>¿Dónde?</h3>
+                    <p>No sé</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container my-5">
+          <div class="row">
+            <div class="col-12 col-md-6 " id="valores-right" data-aos="slide-left">
+              <div>
+                <img src="img/logo-ng-cf.png" alt="Logotipo" class="w-100" id="img-nosotras-left">
+              </div>
+            </div>
+            <div class="col-12 col-md-6 " id="valores-left" data-aos="slide-right">
+              <h2 class="titulo-derecho text-center">Visión y valores</h2>
+              <p class="text-center">Ara porfavor ingresa aquí la vision y valores del proyecto.</p>
+              <br>
+              <h3 class="valores">Valores</h3>
+              <img src="img/love.png" alt="corazon" id="corazon">
+              <ul class="listaViñetasVisibles">
+                <li>Valor1</li>
+                <li>Valor2</li>
+                <li>Valor3</li>
+                <li>Valor4</li>
+              </ul>
+            </div>
+          </div>
+      </div>
+    
+      <div class="container-fluid my-5 py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center">
+              <h2 id="Productos">Este proyecto es posible gracias al apoyo de</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-md-6 ">
+              <div class="card shadow" data-aos="flip-left">
+                <img src="img/logoJuventudes.png" class="card-img-top logosApoyo" alt="Logotipo JuventudEs Gto">
+                <div class="card-body">
+                  <a href="https://juventudesgto.guanajuato.gob.mx/" target="_blank" class="btn btn-dark linkApoyos">Abrir</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 ">
+              <div class="card shadow" data-aos="flip-left">
+                <img src="img/ghalogo2018.png" class="card-img-top logosApoyo" alt="Logotipo GHA">
+                <div class="card-body">
+                  <a href="https://grupohernandezalba.com/" target="_blank" class="btn btn-dark linkApoyos">Abrir</a>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    
+      <div class="container-fluid my-5 py-5 bg-light" id="eventos">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center">
+              <h2 id="Eventos">Eventos</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-md-4">
+              <div class="card shadow" data-aos="flip-left">
+                <img src="img/logo-ng-cf.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title text-center" id="GJWHF">Girls Just Wanna Have Fun</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="card shadow" data-aos="flip-left">
+                <img src="img/logo-ng-cf.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Hackatones</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="card shadow" data-aos="flip-left">
+                <img src="img/logo-ng-cf.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Bootcamps</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="container-fluid my-5 py-5 bg-warning" id="cursos">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center">
+              <h2 id="Productos">Cursos y Talleres</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-md-3">
+              <div class="card shadow" data-aos="flip-left" id="ciencia">
+                <img src="img/logo-ng-cf.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Ciencia</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-3">
+              <div class="card shadow" data-aos="flip-left" id="tecnologia">
+                <img src="img/logo-ng-cf.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Tecnología</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-3">
+              <div class="card shadow" data-aos="flip-left" id="ingenieria">
+                <img src="img/logo-ng-cf.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Ingeniería</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-3">
+              <div class="card shadow" data-aos="flip-left" id="matematicas">
+                <img src="img/logo-ng-cf.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Matematicas</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container my-5 py-5">
+          <div class="row">
+            <div class="col-12 col-md-6 text-center">
+              <h2 id="certificaciones">Certificaciones</h2>
+              <p>Certificate con nosotras en ...</p>
+            </div>
+            <div class="col-12 col-md-6 text-center" id="nosotras-right" data-aos="slide-left">
+              <img src="img/logo-ng-cf.png" alt="Logotipo" class="w-100" id="img-nosotras-left">
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <form action="" name="formaContacto" id="QuieroSer">
         <fieldset>
           <div class="container-fluid py-5 bg-light">
             <div class="container">
               <div class="row">
                 <div class="col-12">
-                  <h2 class="text-center">FORMA DE CONTACTO</h2>
+                  <h2 class="text-center">Quiero ser STEMinistA</h2>
                 </div>
               </div>
               <div class="row">
@@ -183,119 +371,43 @@
         </fieldset>
       </form>
 
-      <div class="container-fluid py-5">
+      <div class="container-fluid my-5 py-5 bg-light">
         <div class="container">
           <div class="row">
             <div class="col-12">
-              <h2 class="text-center">CARACTERÍSTICAS DE LOS PAQUETES</h2>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-12">
-              <table class="table table-bordered table-striped table-hover text-center">
-                <thead class="thead-dark">
-                  <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">First</th>
-                    <th scope="col">Last</th>
-                    <th scope="col">Handle</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td>Larry</td>
-                    <td>the Bird</td>
-                    <td>@twitter</td>
-                  </tr>
-                </tbody>
-              </table>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.001485042102!2d-101.71350188495707!3d21.152339188923726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842bc06e4e1d5a79%3A0x40248ea06dc675dc!2sUniversidad%20De%20La%20Salle%20Baj%C3%ADo%20Campus%20Campestre!5e0!3m2!1sen!2smx!4v1666152930512!5m2!1sen!2smx" class="w-100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="mapa"></iframe>
             </div>
           </div>
         </div>
       </div>
-
-      <div class="container-fluid py-5">
-        <div class="container">
-          <div class="row">
+    
+      <div class="container-fluid text-white p-5" id="piedepagina">
+        <footer>
+          <div class="row text-center">
             <div class="col-12">
-              <div class="alert alert-warning" role="alert">
-                A simple warning alert—check it out!
-              </div>
+              <h3>SIGUENOS EN REDES</h3>
+              <a href="https://www.facebook.com/profile.php?id=100008488774252" target=”_blank”><i class="bi bi-facebook iconos-redes"></i></a>
+              <a href="https://www.instagram.com/aaraceli_sanz/" target="_blank"><i class="bi bi-instagram iconos-redes"></i></a>
+              <a href="https://www.linkedin.com/in/antonia-araceli-sánchez-90b66a20a/" target="_blank"><i class="bi bi-linkedin iconos-redes"></i></a>
             </div>
           </div>
-          <div class="row">
-            <div class="col-12 col-md-4">
-              <img src="img/icono-ng-sf.png" alt="STEMinistA@DeLaSalle" class="img-thumbnail shadow w-100">
-            </div>
-            <div class="col-12 col-md-4">
-              <img src="img/logo-ng-cf.png" alt="STEMinistA@DeLaSalle" class="w-100">
-            </div>
-            <div class="col-12 col-md-4">
-              <img src="img/logo-bco-cf.png" alt="STEMinistA@DeLaSalle" class="w-100">
+          <div class="row text-center">
+            <div class="col-12">
+              <p>
+                <a class="aFooter" href="#inicio">Inicio</a>    /
+                <a class="aFooter" href="#nosotras">Sobre Nosotras</a>    /
+                <a class="aFooter" href="#eventos">Eventos</a>    /
+                <a class="aFooter" href="#cursos">Cursos y Talleres</a>     
+              </p>
             </div>
           </div>
-        </div>
+          <div class="row text-center">
+            <div class="col-12">
+              <p>Copyright ©2022 STEMinistA. All rights reserved.</p>
+            </div>
+          </div>
+        </footer>
       </div>
-
-      <div class="container-fluid py-5">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <div class="accordion" id="accordionExample">
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      Ciencia
-                    </button>
-                  </h2>
-                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      Tecnología
-                    </button>
-                  </h2>
-                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                      Ingeniería
-                    </button>
-                  </h2>
-                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>      
 
       
       <!--https://www.codeply.com/-->
