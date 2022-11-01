@@ -1,3 +1,7 @@
+*{
+    font-family: arial;
+}
+
 .iconosredes {
     font-size: 1.5em;
     padding-right: 0.5em;
@@ -89,8 +93,12 @@ ul{
     border-radius: 10%;
 }
 
-.card, .card-img-top{
-    border-radius: 10%;
+.card{
+    border-radius: 2%;
+}
+
+.card-img-top{
+    border-radius: 2% 2% 0 0;
 }
 
 .cardLogos{
@@ -106,13 +114,30 @@ ul{
     background-color: #DCDCDC;
 }
 
+#QuieroSer{
+    max-width: 500px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.cajaBordes{
+    border-radius: 2%;
+}
+
 #mapa{
-    max-height: 400px;
-    height: 400px;
+    height: 400px; 
+    width: 100%; 
+    padding: 0px; 
+    border-width: 0px; 
+    margin: 10px 0; 
+    left: 0px; 
+    top: 0px;
+    touch-action: pan-x pan-y;
 }
 
 #piedepagina{
     background-color: #003566;
+    
 }
 
 #piedepagina h3{
