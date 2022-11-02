@@ -37,6 +37,10 @@ ul{
     z-index: 1;
 }
 
+#img-der-carrusel{
+    width: 40%;
+}
+
 .animate__animated.animate__fadeInLeft {
     --animate-duration: 1s;
 }
@@ -54,8 +58,13 @@ ul{
     float: hidden;
 }
 
+.tituloDiv{
+    padding-top: 130px;
+    margin-bottom: 30px;
+}
+
 .titulo-derecho{
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
 .valores{
@@ -124,6 +133,10 @@ ul{
     border-radius: 2%;
 }
 
+.boton-final{
+    padding-bottom: 130px;
+}
+
 #mapa{
     height: 400px; 
     width: 100%; 
@@ -137,7 +150,6 @@ ul{
 
 #piedepagina{
     background-color: #003566;
-    
 }
 
 #piedepagina h3{
