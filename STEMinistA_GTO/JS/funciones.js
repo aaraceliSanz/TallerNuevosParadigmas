@@ -30,7 +30,7 @@ btnCursos.addEventListener("click", () => {
 });
 btnQuieroSer.addEventListener("click", () => {
     ocultaContenido();
-    QuieroSer.style.display = "block";
+    quieroSer.style.display = "block";
 });
 
 function ocultaContenido(){
