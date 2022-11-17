@@ -47,7 +47,7 @@ ul{
 }
 
 #img-der-carrusel{
-    width: 40%;
+    width: 41%;
 }
 
 .animate__animated.animate__fadeInLeft {
@@ -65,6 +65,10 @@ ul{
 #img-nosotras-left{
     border-radius: 25%;
     float: hidden;
+}
+
+#img-fluid{
+    align-content: center;
 }
 
 .tituloDiv{
@@ -178,4 +182,37 @@ ul{
 .aFooter{
     text-decoration: none;
     color: white;
+}
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One');
+
+body {  
+  background-color: HoneyDew;
+  font-family: 'Fredoka One', cursive;
+  margin: 0;
+  padding: 0;
+}
+
+.text-container {
+  padding: 0;
+  text-align: center;
+}
+
+.text-container .text-gradient {  
+  color: transparent;
+  background-image: linear-gradient(to left, #FFD700, #7B68EE, #3498db, #2ecc71, #FFD700);
+   webkit-background-clip: text;
+    background-clip: text;
+  animation: color 3s linear infinite; 
+  background-size: 500%;  
+  -webkit-transform: translate3d(0,0,0);
+    -webkit-backface-visibility: hidden;
+}
+
+@keyframes color {
+  from { 
+    background-position: 0% 50%;
+  }
+  to { 
+    background-position: 100% 50%; 
+  }
 }
