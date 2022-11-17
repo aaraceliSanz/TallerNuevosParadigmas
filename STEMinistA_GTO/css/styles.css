@@ -2,6 +2,15 @@
     font-family: arial;
 }
 
+#nosotras, #eventos, #cursos, #certificaciones, #quieroSer{
+    display: none;
+}
+
+.secciones{
+    padding-top: 50px;
+    padding-bottom: 25px;
+}
+
 .iconosredes {
     font-size: 1.5em;
     padding-right: 0.5em;
@@ -123,7 +132,7 @@ ul{
     background-color: #DCDCDC;
 }
 
-#QuieroSer{
+#quieroSer{
     max-width: 500px;
     align-items: center;
     margin: 0 auto;
