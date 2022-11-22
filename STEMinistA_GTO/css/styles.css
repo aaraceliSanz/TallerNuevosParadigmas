@@ -7,8 +7,16 @@
 }
 
 .secciones{
-    padding-top: 50px;
-    padding-bottom: 25px;
+    scroll-margin-top: 100px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+.tituloSecciones{
+    font-size: 50px;
+    font-family: monospace;
+    font-weight: bold;
+    margin-bottom: 20px;
 }
 
 .iconosredes {
@@ -26,10 +34,6 @@
     margin-top: 10px;
     z-index: 1;
     height: 100px;
-}
-
-.container-fuild{
-    margin-top: 50px;
 }
 
 .nav-item:hover{
@@ -50,6 +54,10 @@ ul{
 
 #img-der-carrusel{
     width: 41%;
+}
+
+#inicio{
+    margin-bottom: 150px;
 }
 
 .animate__animated.animate__fadeInLeft {
@@ -119,6 +127,7 @@ ul{
 
 .card{
     border-radius: 2%;
+    margin-bottom: 15px;
 }
 
 .card-img-top{
@@ -138,7 +147,7 @@ ul{
     background-color: #DCDCDC;
 }
 
-#quieroSer{
+#formulario{
     max-width: 500px;
     align-items: center;
     margin: 0 auto;
@@ -163,11 +172,11 @@ ul{
     touch-action: pan-x pan-y;
 }
 
-#piedepagina{
+#pie{
     background-color: #003566;
 }
 
-#piedepagina h3{
+#pie h3{
     color: #ffff00;
     font-size: large;
 }
@@ -177,7 +186,7 @@ ul{
     padding-right: 0.5em;
 }
 
-#piedepagina i{
+#pie i{
     color: #fff;
 }
 

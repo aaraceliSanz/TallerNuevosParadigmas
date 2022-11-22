@@ -59,7 +59,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#inicioRelleno" id="btnInicio">Inicio</a>
+            <a class="nav-link active" aria-current="page" href="#inicio" id="btnInicio">Inicio</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#nosotras" id="btnNosotras">Sobre nosotras</a>
@@ -70,8 +70,8 @@
             </a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" aria-current="page" href="#eventos" id="btnEventos">Girls Just Want to Have STEM!</a></li>
-              <li><a class="dropdown-item" href="#eventos">Hackatones</a></li>
-              <li><a class="dropdown-item" href="#eventos">Bootcamps</a></li>
+              <li><a class="dropdown-item" aria-current="page" href="#eventos" id="btnHackatones">Hackatones</a></li>
+              <li><a class="dropdown-item" aria-current="page" href="#eventos" id="btnBootcamps">Bootcamps</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
@@ -79,12 +79,12 @@
               Cursos y talleres
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#CursosTalleres" id="btnCursos">Ciencia</a></li>
-              <li><a class="dropdown-item" href="#CursosTalleres">Tecnología</a></li>
-              <li><a class="dropdown-item" href="#CursosTalleres">Ingeniería</a></li>
-              <li><a class="dropdown-item" href="#CursosTalleres">Matemáticas</a></li>
+              <li><a class="dropdown-item" href="#cursos" id="btnCiencia">Ciencia</a></li>
+              <li><a class="dropdown-item" href="#cursos" id="btnTecnologia">Tecnología</a></li>
+              <li><a class="dropdown-item" href="#cursos" id="btnIngenieria">Ingeniería</a></li>
+              <li><a class="dropdown-item" href="#cursos" id="btnMatematicas">Matemáticas</a></li>
               <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#certificaciones">Certificaciones</a></li>
+              <li><a class="dropdown-item" href="#certificaciones" id="btnCertificaciones">Certificaciones</a></li>
             </ul>
           </li>
           <li class="nav-item">
@@ -99,10 +99,13 @@
     <img src="img/flecha-hacia-arriba.webp" alt="flecha arriba" id="flechaArriba">
   </a>
 
-
-  <div class="relleno" id="inicioRelleno" style="height: 60px;"></div>
   <div class="container-fluid secciones" id="inicio">
     <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2 class="tituloSecciones">Welcome to STEMinista</h2>
+        </div>
+      </div>
       <div class="row">
         <div class="col-12 col-md-6">
           <div id="carouselExampleControls" class="carousel slide pt-3 ps-4 pb-2" data-bs-ride="carousel" >
@@ -130,27 +133,32 @@
             </button>
           </div>
         </div>
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-6" style="margin-top: 15px;">
           <div class="text-container">
             <div class="text-gradient">
               <img src="img/design-thinking.png" class="img-fluid p-3" alt="Desing Thinking" id="img-der-carrusel">
               <div class="text-container">
-                  <h1 style="font-family: monospace; color:aliceblue">STEM is a lot of FUN,</h1>
-                  <h1 style="font-family: monospace; color:aliceblue">and girls just want to</h1>
-                  <h1 style="font-family: monospace; color:aliceblue">have</h1>
-                  <h1 style="color: rgb(171, 44, 213); font-size: 50px; font-weight: bolder; font-family: monospace;">F  U  N  !</h1>
+                  <h2 style="font-family: monospace; color:aliceblue">STEM is a lot of FUN,</h2>
+                  <h2 style="font-family: monospace; color:aliceblue">and girls just want to</h2>
+                  <h2 style="font-family: monospace; color:aliceblue">have</h2>
+                  <h2 style="color: rgb(171, 44, 213); font-size: 50px; font-weight: bolder; font-family: monospace;">F  U  N  !</h2>
               </div>
             </div>
           </div>
         </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-6">
+        </div>
+        
       </div>
     </div>
   </div>
 
 
 
-  <div class="container-fluid py-2 bg-warning secciones" id="nosotras">
-    <div class="container my-5">
+  <div class="container-fluid secciones" id="nosotras">
+    <div class="container bg-light">
       <div class="row">
         <div class="col-12 col-md-6" id="nosotras-left" data-aos="slide-right">
           <div>
@@ -236,7 +244,6 @@
           </div>
         </div>
       </div>
-
     </div>
   </div>
     
@@ -246,12 +253,12 @@
       <div class="container">
         <div class="row">
           <div class="col-12 text-center">
-            <h2 id="eventosTitulo" class="tituloDiv" style="font-size: 50px; font-family: monospace; font-weight: bold;">Eventos</h2>
+            <h2 class="tituloSecciones">Eventos</h2>
           </div>
         </div>
         <div class="row">
           <div class="col-12 col-md-4">
-            <div class="card shadow" data-aos="flip-left">
+            <div class="card shadow bg-warning" data-aos="flip-left">
               <img src="img/evento/STEMinista_jardines.webp" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title text-center" id="GJWHF">Girls Just Wanna Have Fun</h5>
@@ -260,7 +267,7 @@
             </div>
           </div>
           <div class="col-12 col-md-4">
-            <div class="card shadow" data-aos="flip-left">
+            <div class="card shadow bg-warning" data-aos="flip-left">
               <img src="img/evento/STEMinista_Hackatones.webp" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title text-center">Hackatones</h5>
@@ -269,7 +276,7 @@
             </div>
           </div>
           <div class="col-12 col-md-4">
-            <div class="card shadow" data-aos="flip-left">
+            <div class="card shadow bg-warning" data-aos="flip-left">
               <img src="img/evento/STEMinista_ExperienciaUniversitaria.webp" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title text-center">Experiencia Universitaria</h5>
@@ -284,25 +291,25 @@
 
 
   <div class="secciones" id="cursos">
-    <div class="container-fluid my-5 py-5 bg-warning">
+    <div class="container-fluid bg-light">
       <div class="container">
         <div class="row">
           <div class="col-12 text-center">
-            <h2 id="CursosTalleres" class="tituloDiv" style="font-size: 50px; font-family: monospace; font-weight: bold;">Cursos y Talleres</h2>
+            <h2 style="font-size: 50px; font-family: monospace; font-weight: bold;">Cursos y Talleres</h2>
           </div>
         </div>
         <div class="row">
           <div class="col-12 col-md-3">
-            <div class="card shadow" data-aos="flip-left" id="ciencia">
+            <div class="card shadow bg-warning" data-aos="flip-left" id="ciencia">
               <img src="img/evento/cien.png" class="card-img-top" alt="...">
-              <div class="card-body">
+              <div class="card-body ">
                 <h5 class="card-title text-center">Ciencia</h5>
                 <p class="card-text">Áreas: física, química, biología, fisiología, biotecnología, etc.</p>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-3">
-            <div class="card shadow" data-aos="flip-left" id="tecnologia">
+            <div class="card shadow bg-warning" data-aos="flip-left" id="tecnologia">
               <img src="img/evento/tecno.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title text-center">Tecnología</h5>
@@ -311,7 +318,7 @@
             </div>
           </div>
           <div class="col-12 col-md-3">
-            <div class="card shadow" data-aos="flip-left" id="ingenieria">
+            <div class="card shadow bg-warning" data-aos="flip-left" id="ingenieria">
               <img src="img/evento/inge.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title text-center">Ingeniería</h5>
@@ -320,7 +327,7 @@
             </div>
           </div>
           <div class="col-12 col-md-3">
-            <div class="card shadow" data-aos="flip-left" id="matematicas">
+            <div class="card shadow bg-warning" data-aos="flip-left" id="matematicas">
               <img src="img/evento/mates.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title text-center">Matemáticas</h5>
@@ -329,11 +336,9 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="container my-5 py-5">
-        <div class="row">
-          <div class="text-container col-12 col-md-6">
-              <h2 class="text-gradient" id="certificaciones" style="font-family: monospace; font-size:60px; color:aliceblue; padding-top: 190px;">Certificate con nosotras... </h2> 
+        <div class="row my-5 py-5">
+          <div class="text-container col-12 col-md-6" id="certificaciones">
+              <h2 class="text-gradient" style="font-family: monospace; font-size:60px; color:aliceblue; padding-top: 190px;">Certificate con nosotras... </h2> 
               <h2 class="text-gradient" style="padding-top: 40px;">.</h2>
           </div>
           <div class="col-12 col-md-6 text-center">
@@ -351,13 +356,13 @@
       <div class="container">
         <div class="row">
           <div class="col-12 col-md-12">
-            <form action="post" name="formaContacto">
+            <form action="post" name="formaContacto" id="formulario">
               <fieldset>
                 <div class="container-fluid bg-light cajaBordes">
                   <div class="container">
                     <div class="row">
                       <div class="col-12">
-                        <h2 class="text-center tituloDiv">Quiero ser STEMinistA</h2>
+                        <h2 class="text-center tituloSecciones">Quiero ser STEMinistA</h2>
                       </div>
                     </div>
                     <div class="row">
@@ -393,7 +398,7 @@
         </div>
         <div class="row">
           <div class="col-12 col-md-12">
-            <div class="container-fluid m-0 p-0 bg-warning" >
+            <div class="container-fluid m-0 p-0" >
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.001485042102!2d-101.71350188495707!3d21.152339188923726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842bc06e4e1d5a79%3A0x40248ea06dc675dc!2sUniversidad%20De%20La%20Salle%20Baj%C3%ADo%20Campus%20Campestre!5e0!3m2!1sen!2smx!4v1666152930512!5m2!1sen!2smx" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="mapa"></iframe>
             </div>
           </div>
@@ -403,7 +408,7 @@
   </div>
   
 
-  <div class="container-fluid text-white py-5" id="piedepagina">
+  <div class="container-fluid text-white py-5" id="pie">
     <footer>
       <div class="row text-center">
         <div class="col-12">
@@ -412,16 +417,6 @@
           <a href="https://www.instagram.com/aaraceli_sanz/" target="_blank"><i class="bi bi-instagram iconos-redes"></i></a>
           <a href="https://www.linkedin.com/in/antonia-araceli-sánchez-90b66a20a/" target="_blank"><i class="bi bi-linkedin iconos-redes"></i></a>
           <a href="https://www.tiktok.com/@aaraceli_sanz?_t=8WdgeCNn0An&_r=1/" target="_blank"><i class="bi bi-tiktok iconos-redes"></i></a>
-        </div>
-      </div>
-      <div class="row text-center">
-        <div class="col-12">
-          <p>
-            <a class="aFooter" href="#inicio">Inicio</a>    /
-            <a class="aFooter" href="#nosotras">Sobre Nosotras</a>    /
-            <a class="aFooter" href="#eventos">Eventos</a>    /
-            <a class="aFooter" href="#cursos">Cursos y Talleres</a>     
-          </p>
         </div>
       </div>
       <div class="row text-center">
