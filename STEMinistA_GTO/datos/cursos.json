@@ -35,15 +35,15 @@
     "descripcion" : "Aprende desde organización básica con herramientas de Google hasta fianzas y bases legales para echar a andar tu negocio.",
     "imagen" : "emprender.png"
 },{
-    "nombre" : "",
-    "descripcion" : "",
-    "imagen" : ""
+    "nombre" : "Inglés para ingenieras",
+    "descripcion" : "Aprende las habilidades del idioma más hablado en el mundo pero con un enfoque a tus necesidades de ingeniería.",
+    "imagen" : "ingles.png"
 },{
-    "nombre" : "",
-    "descripcion" : "",
-    "imagen" : ""
+    "nombre" : "Francés básico",
+    "descripcion" : "Aprende uno de los idiomas más bellos del mundo mientras desarrollas habilidades de think-outside-the-box.",
+    "imagen" : "frances.png"
 },{
-    "nombre" : "",
-    "descripcion" : "",
-    "imagen" : ""
+    "nombre" : "UX / UI",
+    "descripcion" : "Crea, diseña y reinventa diseños con ayuda de herramientas profesionales.",
+    "imagen" : "ux.png"
 }]
