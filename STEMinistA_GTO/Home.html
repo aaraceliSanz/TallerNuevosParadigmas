@@ -14,13 +14,6 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- BS Icons-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <!--Animate.CSS-->
-    <!--
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    -->
-    <!-- Icons W3School -->
-    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-
     <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css">
 
@@ -79,12 +72,12 @@
               Cursos y talleres
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#cursos" id="btnCiencia">Ciencia</a></li>
-              <li><a class="dropdown-item" href="#cursos" id="btnTecnologia">Tecnología</a></li>
-              <li><a class="dropdown-item" href="#cursos" id="btnIngenieria">Ingeniería</a></li>
-              <li><a class="dropdown-item" href="#cursos" id="btnMatematicas">Matemáticas</a></li>
+              <li><a class="dropdown-item" href="#cursosdinamicos" id="btnCiencia">Ciencia</a></li>
+              <li><a class="dropdown-item" href="#cursosdinamicos" id="btnTecnologia">Tecnología</a></li>
+              <li><a class="dropdown-item" href="#cursosdinamicos" id="btnIngenieria">Ingeniería</a></li>
+              <li><a class="dropdown-item" href="#cursosdinamicos" id="btnMatematicas">Matemáticas</a></li>
               <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#certificaciones" id="btnCertificaciones">Certificaciones</a></li>
+              <li><a class="dropdown-item" href="#cursosdinamicos" id="btnCertificaciones">Te puede interesar</a></li>
             </ul>
           </li>
           <li class="nav-item">
@@ -103,7 +96,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
-          <h2 class="tituloSecciones">Welcome to STEMinista</h2>
+          <h2 class="tituloSecciones">Bienvenida a STEMinista</h2>
         </div>
       </div>
       <div class="row">
@@ -147,6 +140,7 @@
           </div>
         </div>
       </div>
+
       <div class="row">
         <div class="col-12 col-md-6">
         </div>
@@ -289,67 +283,19 @@
     </div>
   </div>
 
+  <!--Dinámico-->
+  <div class="container-fluid py-5 bg-light">
+    <div class="container">
+      <div class="row" id="cursosdinamicos">
+        <div class="col-12 text-center">
+          <h2 style="font-size: 50px; font-family: monospace; font-weight: bold;">Cursos y Talleres</h2>
+        </div>
+      </div>
+      <div class="row">
 
-  <div class="secciones" id="cursos">
-    <div class="container-fluid bg-light">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 text-center">
-            <h2 style="font-size: 50px; font-family: monospace; font-weight: bold;">Cursos y Talleres</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12 col-md-3">
-            <div class="card shadow bg-warning" data-aos="flip-left" id="ciencia">
-              <img src="img/evento/cien.png" class="card-img-top" alt="...">
-              <div class="card-body ">
-                <h5 class="card-title text-center">Ciencia</h5>
-                <p class="card-text">Áreas: física, química, biología, fisiología, biotecnología, etc.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-3">
-            <div class="card shadow bg-warning" data-aos="flip-left" id="tecnologia">
-              <img src="img/evento/tecno.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title text-center">Tecnología</h5>
-                <p class="card-text">Áreas: desarrollo móvil y web, ciencia de datos, blockchain, redes, etc.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-3">
-            <div class="card shadow bg-warning" data-aos="flip-left" id="ingenieria">
-              <img src="img/evento/inge.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title text-center">Ingeniería</h5>
-                <p class="card-text">Áreas: mecánica, civil, estructuración de materiales, etc.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-3">
-            <div class="card shadow bg-warning" data-aos="flip-left" id="matematicas">
-              <img src="img/evento/mates.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title text-center">Matemáticas</h5>
-                <p class="card-text">Áreas: cálculo, estadística, álgebra, probabilidad, etc.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row my-5 py-5">
-          <div class="text-container col-12 col-md-6" id="certificaciones">
-              <h2 class="text-gradient" style="font-family: monospace; font-size:60px; color:aliceblue; padding-top: 190px;">Certificate con nosotras... </h2> 
-              <h2 class="text-gradient" style="padding-top: 40px;">.</h2>
-          </div>
-          <div class="col-12 col-md-6 text-center">
-            <img src="img/evento/certificate.png" alt="Logotipo" class="img-nosotras-left">
-          </div>
-        </div>
       </div>
     </div>
   </div>
-
-
 
   <div class="secciones"  id="quieroSer">
     <div class="container-fluid">
@@ -439,6 +385,46 @@
 
     <!-- FUNCIONES JS -->
     <script src="JS/funciones.js"></script>
+
+    <script>
+      let cursosdinamicos = document.getElementById("cursosdinamicos"); 
+
+      fetch("datos/cursos.json")
+      .then( response => {
+          response.json().then( datos => {
+              datos.forEach( registro => {
+
+                  let columna = document.createElement("div");
+                  columna.className = "col-12 col-md-6 p-4 text-center bg-white shadow";
+
+                  let nombre = document.createElement("h3");
+                  nombre.innerHTML = registro.nombre;
+
+                  let descripcion = document.createElement("h5");
+                  descripcion.className = "card-title text-secondary";
+                  descripcion.innerHTML = registro.descripcion;
+
+                  let imagen = document.createElement("img");
+                  imagen.className = "w-100";
+                  imagen.src = "img/evento/" + registro.imagen;
+
+                  let boton = document.createElement("button");
+                  boton.className = "btn btn-warning hvr-grow my-3";
+                  boton.innerHTML = "Ir al curso";
+                  
+                  
+                  cursosdinamicos.appendChild(columna);
+                  columna.appendChild(imagen);
+                  columna.appendChild(nombre);
+                  columna.appendChild(descripcion);
+                  columna.appendChild(boton);
+
+              });
+          });
+      });
+
+  </script>
+  </script>
 
 </body>
 </html>

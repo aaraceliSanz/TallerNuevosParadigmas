@@ -14,4 +14,24 @@
     "nombre" : "Matemáticas",
     "descripcion" : "Áreas: cálculo, estadística, álgebra, probabilidad, etc.",
     "imagen" : "mates.png"
+},{
+    "nombre" : "Artes",
+    "descripcion" : "Historia, vinculación y abstracción enfocado a algoritmos.",
+    "imagen" : "artes.png"
+},{
+    "nombre" : "Marca personal",
+    "descripcion" : "Branding y guía paso a paso en CV, LinkedIn y entrenamiento para entrevista.",
+    "imagen" : "marcapersonal.png"
+},{
+    "nombre" : "Inteligencia emocional",
+    "descripcion" : "Habilidades y personalidades de líder dentro de los ámbitos empresariales y STEM.",
+    "imagen" : "inteligencia.png"
+},{
+    "nombre" : "STEM para todes",
+    "descripcion" : "10 actividades diarias con las que puedo ser promotora incluyente de STEM con niñas y niños.",
+    "imagen" : "stemparatodes.png"
+},{
+    "nombre" : "Emprender desde 0 hasta hero",
+    "descripcion" : "Aprende desde organización básica con herramientas de Google hasta fianzas y bases legales para echar a andar tu negocio.",
+    "imagen" : "emprender.png"
 }]
