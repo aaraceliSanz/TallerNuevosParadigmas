@@ -1,4 +1,3 @@
-
 const inicio = document.getElementById('inicio');
 const nosotras = document.getElementById('nosotras');
 const eventos = document.getElementById('eventos');

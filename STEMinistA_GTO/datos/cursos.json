@@ -1,0 +1,17 @@
+[{
+    "nombre" : "Ciencia",
+    "descripcion" : "Áreas: física, química, biología, fisiología, biotecnología, etc.",
+    "imagen" : "cien.png"
+}, {
+    "nombre" : "Tecnología",
+    "descripcion" : "Áreas: desarrollo móvil y web, ciencia de datos, blockchain, redes, etc.",
+    "imagen" : "tecno.png"
+}, {
+    "nombre" : "Ingeniería",
+    "descripcion" : "Áreas: mecánica, civil, estructuración de materiales, etc.",
+    "imagen" : "inge.png"
+},{
+    "nombre" : "Matemáticas",
+    "descripcion" : "Áreas: cálculo, estadística, álgebra, probabilidad, etc.",
+    "imagen" : "mates.png"
+}]
