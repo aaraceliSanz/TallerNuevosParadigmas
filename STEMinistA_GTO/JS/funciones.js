@@ -19,30 +19,25 @@ const btnQuieroSer = document.getElementById('btnQuieroSer');
 btnInicio.addEventListener("click", () => {
     ocultaContenido();
     inicio.style.display = "block";
-    cursos.style.display = 'none';
 });
 btnNosotras.addEventListener("click", () => {
     ocultaContenido();
     nosotras.style.display = "block";
-    cursos.style.display = 'none';
 });
 btnEventos.addEventListener("click", () => {
     ocultaContenido();
     eventos.style.display = "block";
     pie.style.display = "block";
-    cursos.style.display = 'none';
 });
 btnHackatones.addEventListener("click", () => {
     ocultaContenido();
     eventos.style.display = "block";
     pie.style.display = "block";
-    cursos.style.display = 'none';
 });
 btnBootcamps.addEventListener("click", () => {
     ocultaContenido();
     eventos.style.display = "block";
     pie.style.display = "block";
-    cursos.style.display = 'none';
 });
 btnCiencia.addEventListener("click", () => {
     ocultaContenido();
@@ -68,7 +63,6 @@ btnQuieroSer.addEventListener("click", () => {
     ocultaContenido();
     quieroSer.style.display = "block";
     pie.style.display = "block";
-    cursos.style.display = 'none';
 });
 
 function ocultaContenido(){

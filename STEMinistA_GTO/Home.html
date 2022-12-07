@@ -219,7 +219,7 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-12 col-md-6 p-3">
+            <div class="col-12 col-md-6">
               <div class="card shadow bg-warning" data-aos="flip-left">
                 <img src="img/cbqa.jpeg" class="card-img-top logosApoyo p-3" alt="Logotipo JuventudEs Gto">
                 <div class="card-body">
@@ -227,7 +227,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md-6 p-3">
+            <div class="col-12 col-md-6">
               <div class="card shadow bg-warning" data-aos="flip-left">
                 <img src="img/Logo_salle_bajio.webp" class="card-img-top logosApoyo p-3" alt="Logotipo GHA">
                 <div class="card-body">
@@ -284,18 +284,19 @@
   </div>
 
   <!--Dinámico-->
-  <div class="container-fluid py-5 bg-light">
-    <div class="container">
-      <div class="row" id="cursosdinamicos">
-        <div class="col-12 text-center">
-          <h2 style="font-size: 50px; font-family: monospace; font-weight: bold;">Cursos y Talleres</h2>
+  <div class="secciones" id="cursosdinamicos">
+    <div class="container-fluid my-5 py-5 bg-warning">
+      <div class="container">
+        <div class="row">
+          <h2 style="font-size: 50px; font-family: monospace; font-weight: bold; text-align: center;">Cursos y Talleres</h2>
         </div>
-      </div>
-      <div class="row">
-
-      </div>
+      </div> 
     </div>
+    <!--
+      Fetch
+    -->
   </div>
+  
 
   <div class="secciones"  id="quieroSer">
     <div class="container-fluid">
@@ -395,7 +396,8 @@
               datos.forEach( registro => {
 
                   let columna = document.createElement("div");
-                  columna.className = "col-12 col-md-6 p-4 text-center bg-white shadow";
+                  columna.className = "col-12 col-md-4 p-4 m-3 text-center bg-white shadow";
+                  columna.style = "align-items: center;";
 
                   let nombre = document.createElement("h3");
                   nombre.innerHTML = registro.nombre;
